@@ -1,0 +1,8 @@
+import tensorflow as tf
+# Disabling eager execution because Alibi is not compatible with it
+tf.compat.v1.disable_eager_execution()
+print(f"Is TensorFlow running in eager execution mode? -----→ {tf.executing_eagerly()}")
+!nvidia-smi -L
+
+BASE_PATH = "BASE_PATH"  #Your base path here
+
